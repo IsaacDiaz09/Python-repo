@@ -1,0 +1,16 @@
+En general, sin importar el lenguaje utilizado, nunca deberías hacer una consulta SQL a partir de una cadena y usando funciones de cadenas para concatenar o integrar subcadenas en la consulta.
+
+Por ejemplo, en la pregunta que citas, el OP mostró un código con esta línea
+
+c.execute("INSERT INTO usuarios (usuario, pass, destino)  values({0},{1},{2});".format(usuario,contr,destino))
+Ahí ves cómo hay una cadena con la consulta y unos placeholders en los lugares donde, usando format, se ponen los parámetros de ejecución. Esto no hace ninguna validación, no escapa ningún caracter y permite que un atacante ingrese cualquier dato malicioso que abusará de tu aplicación y se ejecutará en la consulta.
+
+El contenido de usuario, contra o destino puede ser cualquier cosa, incluyendo caracteres especiales que deformen la consulta que pretendes ejecutar. Recomiendo que leas más sobre SQL injection para que veas cómo puede usarse esto.
+
+En la respuesta aceptada muestran que es posible usar una consulta parametrizada
+
+cursor.execute('''INSERT INTO usuarios (usuario, pass, destino)
+                               VALUES(?, ?, ?);''',
+                       data
+                      )
+donde data es una tupla de datos obtenidos del formulario. Cada símbolo ? es un placeholder que la librería sqlite es capaz de reemplazar por los parámetros que le entregues (data), en el orden dado, escapando las cosas para evitar líos. Ahí reusas lo que los desarrolladores del módulo ya probaron y consideran seguro.
