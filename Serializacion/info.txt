@@ -1,0 +1,3 @@
+Remember that pickle doesn't actually store information about how a class/object 
+is constructed, and needs access to the class when unpickling. 
+See wiki on using Pickle for more details.

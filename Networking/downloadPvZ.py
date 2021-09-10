@@ -1,8 +1,8 @@
 # Enlace de: https://www.mediafire.com/file/8yxaysu9eqo3dsr/Plantas_vs._Zombies_por_JimmyTutoriales.rar/file
 import urllib.request
 
-game = urllib.request.urlopen("https://download1493.mediafire.com/kbq70sprzmgg/8yxaysu9eqo3dsr/Plantas+vs.+Zombies+por+JimmyTutoriales.rar")
-# Aunque lo malo es que los enlaces de mediafire son temporales
+game = urllib.request.urlopen("https://download1493.mediafire.com/pdqkzpnxhijg/8yxaysu9eqo3dsr/Plantas+vs.+Zombies+por+JimmyTutoriales.rar")
+# Aunque lo malo es que los enlaces de mediafire son temporales pero arriba esta la fuente
 
 size = 0
 
@@ -93,5 +93,6 @@ Se han descargado 35.00 MB
 Se han descargado 35.50 MB
 Se han descargado 36.00 MB
 Se han descargado 36.43 MB
+
 Archivo descargado y guardado con exito
 """
