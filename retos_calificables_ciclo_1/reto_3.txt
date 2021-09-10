@@ -1,0 +1,51 @@
+Reto 3: Selección de Vivienda
+
+Catalina es una habitante y ama de casa en Boston Mass. Ella junto con su esposo deciden comprar un nuevo inmueble en el mismo lugar donde llevan viviendo por más de 5 años, así que deciden ir a una compañía que los oriente acerca de qué inmueble pueden comprar. Catalina manifiesta que para comprar la vivienda esta debe cumplir con las siguientes características:
+
+•	Que tenga 3 o más baños.
+•	Que tenga 4 o más habitaciones.
+•	Que el tiempo promedio en llegar al trabajo sea menos de 35 minutos.
+•	Que tenga 4 o más parques verdes alrededor.
+Usted hace parte del equipo de desarrollo encargado en la selección de las viviendas que cumplen con las condiciones del cliente, así que debe construir el software que procesará los datos de las bases de datos registradas en el sistema. Su misión es crear un programa en Python que permita mostrarle al cliente la lista de las casas que cumplen con sus requerimientos y por supuesto el valor de las mismas para su consideración.
+
+
+Entrada	La entrada estará conformada por N + 1 líneas:
+
+•	La primera línea recibirá un número N que equivale a la cantidad de registros en la base de datos de la compañía. Cada registro representa una casa disponible para la venta.
+•	Cada una de las siguientes N líneas estará formada por 5 números separados por espacios que representan las diferentes características de una casa. Por ejemplo, la fila 5 14 5 8 5000 representa una casa con 5 baños, 14 habitaciones, un promedio de 5 minutos al trabajo, 8 parques cercanos y un valor de 5000 dólares.
+Salida	
+
+•	El programa imprimirá el precio de cada una de las casas de la base de datos que cumplen con los criterios de Catalina.
+•	Si no existe ningún registro en la base de datos que cumpla los criterios de Catalina, el programa imprimirá 'NO DISPONIBLE'.
+________________________________________
+
+Instrucciones para la calificación automática
+
+Antes de enviar la solución del reto, por favor tenga en cuenta los siguientes aspectos:
+
+•	Cada línea debe contener los valores de los parámetros separados por un espacio.
+•	Es importante no utilizar ningún mensaje a la hora de capturar las entradas, es decir, al utilizar la función input(), no agregue ningún texto para capturar los datos.
+•	El resultado ´NO DISPONIBLE´ siempre debe imprimirse en mayúscula.
+
+
+
+
+Entrada:
+	2
+3 3 36 2 5500
+3 2 33 3 14000
+5
+3 2 39 4 5500
+3 4 39 2 6000
+3 3 33 4 11500
+3 4 30 4 13000
+2 4 33 5 5000
+4
+3 4 30 5 6500
+3 4 30 3 13500
+2 3 36 4 6000
+3 3 33 4 11500
+Salida:	NO DISPONIBLE
+13000
+6500
+
