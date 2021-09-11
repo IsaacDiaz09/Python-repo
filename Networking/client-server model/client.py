@@ -32,10 +32,12 @@ def recieve_message():
 
 def write_message():
     while True:
-        message = "{}: {}".format(username,input()).encode()
-        client.send(message)
+        msg_to_send = input().strip()
+        if msg_to_send != "":
+            message = "{}: {}".format(username,msg_to_send).encode()
+            client.send(message)
 
-# un hilo para que que cada usuario 
+# un hilo para cada usuario 
 recieve_thread = threading.Thread(target=recieve_message)
 recieve_thread.start()
 

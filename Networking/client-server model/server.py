@@ -39,12 +39,13 @@ def handle_msg(client):
             # Se obtiene el msg y se envia a los demas
             msg = client.recv(1024)
             broadcast(msg,client)
-        except:
+        except ConnectionResetError:
             # Se localiza el cliente que se desconecto y se elimina y se le cierra la conexion
             # Tambien se envia un broadcast a los demas usuarios de que se desconectó, rompe el ciclo
             pos = clients.index(client)
             username = usernames[pos]
-            broadcast("ChatBot: {} disconnected".format(username).encode())
+            broadcast("ChatBot: {} disconnected".format(username).encode(),client)
+            print("User {} disconnected from server".format(username))
             clients.remove(client)
             usernames.remove(username)
             client.close()
