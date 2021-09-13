@@ -1,0 +1,9 @@
+1 hola
+2 como
+3 estan
+4 ya
+5 casi
+6 son
+7 expertos
+8 en
+9 python
