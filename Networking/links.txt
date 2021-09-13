@@ -1,0 +1,22 @@
+https://static.tsugi.org/bootstrap-3.4.1/css/bootstrap.min.css
+https://static.tsugi.org/js/jquery-ui-1.11.4/jquery-ui.min.css
+https://static.tsugi.org/fontawesome-free-5.8.2-web/css/all.css
+https://static.tsugi.org/fontawesome-free-5.8.2-web/css/v4-shims.css
+https://static.tsugi.org/css/tsugi2.css
+https://www.py4e.com
+https://www.py4e.com/lessons
+https://www.py4e.com/discussions
+https://www.py4e.com/materials
+http://www.dr-chuck.com
+http://www.dr-chuck.com/office/
+https://www.py4e.com/book
+https://www.py4e.com/login
+https://www.w3.org/Protocols/rfc2616/rfc2616.txt
+https://www.py4e.com
+http://” or “href=
+https://pypi.python.org/pypi/beautifulsoup4
+https://packaging.python.org/tutorials/installing-packages/
+http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser
+https://www.py4e.com/code3
+http://www.crummy.com
+https://github.com/csev/py4e/tree/master/book3
