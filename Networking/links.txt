@@ -13,7 +13,6 @@ https://www.py4e.com/book
 https://www.py4e.com/login
 https://www.w3.org/Protocols/rfc2616/rfc2616.txt
 https://www.py4e.com
-http://” or “href=
 https://pypi.python.org/pypi/beautifulsoup4
 https://packaging.python.org/tutorials/installing-packages/
 http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser

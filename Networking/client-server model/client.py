@@ -1,8 +1,8 @@
 import socket
 import threading
+import sys
 
 PORT = 55505
-
 SERVER = socket.gethostbyname(socket.gethostname())
 
 # Protocolo IPv4 que maneja streams de datos
@@ -32,10 +32,15 @@ def recieve_message():
 
 def write_message():
     while True:
-        msg_to_send = input().strip()
-        if msg_to_send != "":
-            message = "{}: {}".format(username,msg_to_send).encode()
-            client.send(message)
+        try:
+            msg_to_send = input().strip()
+            if msg_to_send != "":
+                message = "{}: {}".format(username,msg_to_send).encode()
+                client.send(message)
+        except EOFError:
+            print("Finalizando la sesión...")
+            sys.exit()
+
 
 # un hilo para cada usuario 
 recieve_thread = threading.Thread(target=recieve_message)

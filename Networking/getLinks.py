@@ -7,7 +7,7 @@ with open("Networking/html.txt","r",encoding="utf-8") as file:
     
     for line in data:
         # RegEx para filtrar los links
-        links = re.findall(r'href="(http[s]?://.*?)"',line)
+        links = re.findall(r'href="(http[s]?://[^ ]*?)"',line)
         for link in links:
             # Se escriben las coincidencias en otro texto
             with open("Networking/links.txt","a",encoding="utf-8") as f:
@@ -34,12 +34,12 @@ https://www.py4e.com/book
 https://www.py4e.com/login
 https://www.w3.org/Protocols/rfc2616/rfc2616.txt
 https://www.py4e.com
-http://” or “href=
 https://pypi.python.org/pypi/beautifulsoup4
 https://packaging.python.org/tutorials/installing-packages/
 http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-a-parser
 https://www.py4e.com/code3
 http://www.crummy.com
 https://github.com/csev/py4e/tree/master/book3
-22 enlaces encontrados en el html
+
+21 enlaces encontrados en el html
 """
